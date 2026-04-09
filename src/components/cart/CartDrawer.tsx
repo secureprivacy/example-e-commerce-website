@@ -56,8 +56,6 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
 
   const { lineItems, total, itemCount } = useCart();
 
-  if (state === 'closed' && !open) return null;
-
   return (
     <>
       <div
